@@ -19,23 +19,39 @@ function getKeys() {
     }
 }
 
-function pressedEnter(){ 
+const socialsList = ["https://www.instagram.com/", "https://discord.com/channels/@me/", "https://twitter.com/?lang=en"];
+const gamesList = ["https://addictinggames.com"];
+const videoList = ["https://youtube.com", "https://www.twitch.tv/"];
+const streamingList = ["https://www.amazon.com/Prime-Video/b?node=2676882011", "https://www.netflix.com/browse", "https://www.disneyplus.com/login"]
+
+function pressedEnter(){ // future: parse code into window.open to compress code i
     // Called when enter key is pressed any time after the secret key 
     // Uses "code" variable from previous function to determine which site to redirect user to coded website
-    // 
+    let i = 0;
 
-    if (code == "games"){
-        window.open("https://addictinggames.com");
+    if (code == "socials"){
+        while (i < socialsList.length) {
+            window.open(socialsList[i]);
+            i++;
+        }
     } 
+    else if (code == "games"){
+        while (i < gamesList.length) {
+            window.open(gamesList[i]);
+            i++;
+        } 
+    }
     else if (code == "video"){
-        window.open("https://youtube.com"); 
+        while (i < videoList.length) {
+            window.open(videoList[i]);
+            i++;
+        } 
     }
-    else if (code == "socials"){
-        window.open("https://www.instagram.com/"); 
-        window.open("https://discord.com/channels/@me/");
-    }
-    else if (code == "library"){
-        window.open("https://miss.ent.sirsidynix.net/client/en_CA/mlsathome/"); 
+    else if (code == "streaming"){
+        while (i < streamingList.length) {
+            window.open(streamingList[i]);
+            i++;
+        } 
     }
     else{
         alert("Invalid Code: " + code);
