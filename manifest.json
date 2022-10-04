@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Keywe",
+    "description": "Add a custom background to google.com",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "version": "1.0",
+    "icons":{
+        "16": "/images/Keywe16logo.png",
+        "48": "/images/Keywe48logo.png",
+        "128": "/images/Keywe128logo.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+      },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+    }]
+}
