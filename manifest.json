@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Keywe",
-    "description": "Add a custom background to google.com",
+    "description": "Open websites with code-words",
     "background": {
         "scripts": ["background.js"]
     },
