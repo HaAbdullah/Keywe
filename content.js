@@ -69,3 +69,4 @@ function pressedEnter(){ // future: parse code into window.open to compress code
 }
 
 //chrome.runtime.sendMessage(/*ADD JSON OBJECT HERE*/ );
+//manifestation sync
