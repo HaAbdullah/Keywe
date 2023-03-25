@@ -24,7 +24,7 @@ function getKeys() {
 }
 
 const socialsList = ["https://www.instagram.com/", "https://discord.com/channels/@me/", "https://twitter.com/?lang=en"];
-const gamesList = ["https://addictinggames.com"];
+const gamesList = [ ];
 const videoList = ["https://youtube.com", "https://www.twitch.tv/"];
 const streamingList = ["https://www.amazon.com/Prime-Video/b?node=2676882011", "https://www.netflix.com/browse", "https://www.disneyplus.com/login"]
 
@@ -67,5 +67,3 @@ function pressedEnter(){ // future: parse code into window.open to compress code
         start();
     }
 }
-
-//chrome.runtime.sendMessage(/*ADD JSON OBJECT HERE*/ );

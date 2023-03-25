@@ -1,9 +1,24 @@
+<!DOCTYPE html>
 <html>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-      </form>
+  <head>
+    <title>KeyWe</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        KeyWe
+        <span class="logo"></span>
+      </h1>
+      <p>Select Category:</p>
+      <select id="category">
+        <option value="socials">Social Media</option>
+        <option value="games">Games</option>
+        <option value="video">Video</option>
+        <option value="streaming">Streaming</option>
+      </select>
+      <button id="submit">Open</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>

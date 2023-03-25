@@ -1,0 +1,65 @@
+body {
+  background-color: #3b577a;
+  font-family: coolvetica;
+}
+
+.container {
+  width: 504px;
+  margin: auto;
+  text-align: center;
+  padding: 33.6px;
+  border: 1px solid black;
+  border-radius: 8.4px;
+  background-color: #5074a1;
+}
+
+.logo {
+  background-image: url(images/Keywe48logo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 53.76px;
+  height: 44.8px;
+  margin-right: 0px;
+  float: left;
+  margin-top: 17px;
+}
+
+h1 {
+  font-size: 60.48px;
+  margin-bottom: 33.6px;
+  font-family: coolvetica;
+  color: white;
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 14px;
+  font-family: verdana;
+  font-size: 25.2px;
+  color: white;
+}
+
+select {
+  padding: 6px;
+  margin-bottom: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: verdana;
+  font-size: 25.2px;
+  color: #3b577a;
+}
+
+button {
+  background-color: #3b577a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8.4px;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 25.2px;
+}
+
+button:hover {
+  background-color: #5074a1;
+}

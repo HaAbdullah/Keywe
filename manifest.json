@@ -5,7 +5,7 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "version": "1.0",
+    "version": "1.1",
     "icons":{
         "16": "/images/Keywe16logo.png",
         "48": "/images/Keywe48logo.png",
