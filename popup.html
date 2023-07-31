@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>KeyWe</title>
-    <link rel="stylesheet" href="popup.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>
-        KeyWe
-        <span class="logo"></span>
-      </h1>
-      <p>Select Category:</p>
-      <select id="category">
-        <option value="socials">Social Media</option>
-        <option value="games">Games</option>
-        <option value="video">Video</option>
-        <option value="streaming">Streaming</option>
-      </select>
-      <button id="submit">Open</button>
+<head>
+  <title>Keywe Options</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="/images/Keywe64logo.png" alt="Keywe Logo">
+    <h2>KeyWe</h2>
+    <div class="input-group">
+      <label class="label-bold" for="code">Code Word:</label>
+      <input type="text" id="code" placeholder="Enter your code word...">
     </div>
-    <script src="popup.js"></script>
-  </body>
+    <div class="input-group">
+      <label class="label-bold" for="websites">Websites (one per line):</label>
+      <textarea id="websites" rows="5" placeholder="Enter websites URLs..."></textarea>
+    </div>
+    <button id="saveButton">Save</button>
+    <div class="instructionsButtonClass">
+      <button id="instructionsButton">Guide</button>
+    </div>
+    <div class="instructions-container" id="instructionsContainer" style="display: none;">
+      <iframe src="instructions.html" width="100%" height="400" frameborder="0"></iframe>
+    </div>
+    <div class="savedCodesHeader">
+      <h3>Saved codes:</h3>
+    </div>
+    <div class="savedCodesList">
+      <ul id="savedCodes"></ul> 
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
 </html>

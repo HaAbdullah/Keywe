@@ -1,65 +1,133 @@
+/* Add the font face for Proxima Nova font */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/images/Proxima Nova Font.otf') format('otf');
+}
+
 body {
-  background-color: #3b577a;
-  font-family: coolvetica;
+  width: 300px;
+  font-family: "Proxima Nova";
+  background-color: #8FB996;
+  padding: 10px;
+  margin: 0;
 }
 
 .container {
-  width: 504px;
-  margin: auto;
-  text-align: center;
-  padding: 33.6px;
-  border: 1px solid black;
-  border-radius: 8.4px;
-  background-color: #5074a1;
+  margin: 0 auto;
+  background-color: #709775;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo {
-  background-image: url(images/Keywe48logo.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  width: 53.76px;
-  height: 44.8px;
-  margin-right: 0px;
-  float: left;
-  margin-top: 17px;
+  display: block;
+  margin: 0 auto 0px;
 }
 
-h1 {
-  font-size: 60.48px;
-  margin-bottom: 33.6px;
-  font-family: coolvetica;
-  color: white;
-  display: inline-block;
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
-p {
-  margin-bottom: 14px;
-  font-family: verdana;
-  font-size: 25.2px;
-  color: white;
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-select {
-  padding: 6px;
-  margin-bottom: 14px;
+label {
+  display: block;
+  color: #54494B;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+button {
   width: 100%;
-  box-sizing: border-box;
-  font-family: verdana;
-  font-size: 25.2px;
-  color: #3b577a;
+  padding: 5px;
+  border: 1px solid #54494B;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-sizing: border-box; 
+}
+
+textarea {
+  resize: vertical;
+}
+
+.label-bold {
+  font-size: 14px;
 }
 
 button {
-  background-color: #3b577a;
+  background-color: #54494B;
   color: white;
-  padding: 12px;
   border: none;
-  border-radius: 8.4px;
   cursor: pointer;
-  font-family: verdana;
-  font-size: 25.2px;
+  transition: background-color 0.2s;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.instructionsButtonClass {
+  background-color: #54494B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 button:hover {
-  background-color: #5074a1;
+  background-color: #8FB996;
+}
+
+.savedCodesList {
+  margin-top: -10px;
+  display: block;
+  color: #54494B;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.savedCodesHeader {
+  margin-top: -10px;
+  font-size: 14px;
+  color: #54494B;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.instructions-container {
+  display: none;
+  padding: 10px;
+  border: 1px solid #54494B;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #709775;
+  color: white;
+  font-size: 14px;
 }
