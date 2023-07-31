@@ -80,8 +80,14 @@ If you encounter any issues or have questions about the Keywe extension, please 
 For any inquiries or support related to the Keywe Chrome extension, you can contact me at abdullah.hasanjee@gmail.com
 
 ## License
+Open Source License - Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). You are free to share and redistribute this project under the following conditions:
+
+Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You must attribute the work to Abdullah Hasanjee.
+Non-Commercial: You may not use this work for commercial purposes.
+Derivatives: You may remix, transform, or build upon this work with proper attribution of original work.
+For more details about the license, visit: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 ## Logo Attribution
 
