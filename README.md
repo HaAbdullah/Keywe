@@ -1,37 +1,84 @@
-KeyWe README
-============
+# Keywe Chrome Extension - README
 
-KeyWe is a Chrome extension that allows users to open websites with code-words. This README provides documentation for the code files included in this project.
+## Overview
 
-Files
------
+The Keywe Chrome extension is a handy tool that allows users to associate websites with unique code words and quickly access those websites by entering the code word followed by the backtick key (`) in the browser. This extension enhances browsing productivity by providing a simple and efficient way to open frequently visited websites without the need to type or remember long URLs.
 
-### manifest.json
+## Technologies Used
 
-The `manifest.json` file is a configuration file for the Chrome extension. It includes information such as the extension's name, description, version, and background and content scripts. The file also defines the browser action and icons used for the extension.
+- JavaScript
+- HTML
+- CSS
+- Chrome Extension API (manifest.json)
+- Chrome Storage API
 
-### content.js
+## Features
 
-The `content.js` file is a JavaScript file that runs on every page the user visits. It listens for a secret key (`) and then listens for additional keys to form a code-word. When the user presses Enter, the code-word is compared to a list of predefined categories. If the code-word matches a category, KeyWe opens all the websites associated with that category in separate tabs.
+1. **Code Word Association**: Users can assign code words to specific websites they frequently visit.
 
-### popup.css
+2. **Easy Access**: By entering the code word followed by the backtick key (`), users can instantly open all associated websites in separate tabs.
 
-The `popup.css` file contains the styling for the extension's popup. It defines the background color, font family, and other styles for the popup's elements.
+3. **User-Friendly Interface**: The extension includes a user-friendly popup that allows users to save and manage their code word associations.
 
-### popup.html
+4. **Instructions**: Detailed instructions are provided to guide users on how to use the extension effectively.
 
-The `popup.html` file is the HTML file for the extension's popup. It contains a select element for the user to choose a category and a button to open the websites associated with the selected category.
+## How to Use
 
-### popup.js
+1. **Save Code Word and Websites**:
+   - Open the Keywe extension popup by clicking on the extension icon.
+   - Enter a unique "Code Word" in the input field provided.
+   - Below the "Code Word" input, enter the URLs of the websites you want to associate with the code word, each URL on a new line.
+   - Click the "Save" button to save the code word and associated websites.
 
-The `popup.js` file is the JavaScript file that controls the popup's behavior. It listens for the user to click the "Open" button and then retrieves the selected category's value. The selected category value is then passed to the `openWebsites` function, which opens all the websites associated with the category.
+2. **Open Saved Websites**:
+   - To open the saved websites, press the backtick key (`) on your keyboard.
+   - Enter the code word associated with the desired websites.
+   - Press "Enter," and the associated websites will open in new tabs.
 
-How to Use
-----------
+3. **Manage Saved Code Words**:
+   - The popup displays a list of all saved code words and their associated websites.
+   - To remove a saved code word and its associations, click the "Delete" button next to the code word.
 
-To use KeyWe, install the extension and click on the KeyWe icon in the browser toolbar. The popup will appear, allowing you to select a category and open the associated websites. Press the secret key (`) to activate KeyWe on any webpage and type the code-word for the desired category. Press Enter to open all the websites associated with the category.
+4. **Reloading Webpage**:
+   - After saving a new code word and websites, reload the webpage to apply the changes to Chrome.
 
-Future Improvements
--------------------
+5. **Note on Popups and Redirects**:
+   - If one or more websites do not open from your saved sites, please allow popups and redirects through your Chrome settings (Settings -> Privacy and security -> Site Settings -> Pop-ups and redirects).
 
-In the future, we plan to add the ability to customize the code-words and associated websites. We also plan to add more categories and websites to the predefined lists.
+## Installation
+
+To use the Keywe Chrome extension, follow these steps:
+
+1. Download or clone this repository to your local machine.
+
+2. Open Google Chrome.
+
+3. Go to `chrome://extensions/` in the address bar.
+
+4. Turn on the "Developer mode" toggle in the top-right corner of the page.
+
+5. Click the "Load unpacked" button.
+
+6. Select the folder where you downloaded or cloned the extension.
+
+7. The Keywe extension should now appear in the list of installed extensions.
+
+## Troubleshooting
+
+If you encounter any issues or have questions about the Keywe extension, please check the following:
+
+- Ensure that the extension is enabled and running in Google Chrome.
+
+- Verify that you have saved the correct code word and websites in the popup.
+
+- Make sure that you have reloaded the webpage after saving new associations.
+
+- Check your Chrome settings to allow popups and redirects if websites are not opening correctly.
+
+## Support
+
+For any inquiries or support related to the Keywe Chrome extension, you can contact me at abdullah.hasanjee@gmail.com
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
