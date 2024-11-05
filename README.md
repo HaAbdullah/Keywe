@@ -1,5 +1,5 @@
-# Keywe Chrome Extension - README
-
+# Keywe Chrome Extension 
+To download Keywe, visit: https://chromewebstore.google.com/detail/keywe/pbbojhhloifmdbggfibbjfihildgehpc
 ## Overview
 
 The Keywe Chrome extension is a handy tool that allows users to associate websites with unique code words and quickly access those websites by entering the code word followed by the backtick key (`) in the browser. This extension enhances browsing productivity by providing a simple and efficient way to open frequently visited websites without the need to type or remember long URLs.
